@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16sp"
+        tools:context=".activity.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:padding="16dp"
+            android:id="@+id/imageView1"
+            android:src="@mipmap/ic_launcher_round">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insira Usuario e Senha"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_primary"
+            android:layout_gravity="center"
+            android:id="@+id/TextoInit">
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:padding="12dp"
+            android:hint=" Usuário"
+            android:background="@android:drawable/editbox_background"
+            android:id="@+id/usuario"
+            android:drawableLeft="@drawable/ic_baseline_supervised_user_circle_24">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:padding="12dp"
+            android:hint=" Senha"
+            android:background="@android:drawable/editbox_background"
+            android:id="@+id/senha"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:drawableRight="@drawable/ic_baseline_visibility_24">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Login"
+            android:id="@+id/botao_login">
+        </Button>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:id="@+id/frame_login">
+        </FrameLayout>
+
+
+    </LinearLayout>
+</layout>
